@@ -10,8 +10,8 @@ from sklearn.model_selection import KFold
 
 data_input = pd.read_csv('OER-database-noDOI.csv', sep=',')
 
-labels = data_input['Tafel']
-features = data_input.drop('Tafel', axis=1)
+labels = data_input['Tafel'] # can change to "Overpotential"
+features = data_input.drop('Tafel', axis=1) # can change to "Overpotential"
 
 results = {}
 
